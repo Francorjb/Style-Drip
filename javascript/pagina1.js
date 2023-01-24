@@ -5,12 +5,15 @@ const containerProductos = document.querySelector(".container-img")
 const ropa = (array) => {
     const arrayNuevo = array.reduce((acc , element) =>{
         return acc + `
-        <div class="tarjetas" id="tarjera-${element.id}">
-            <div  class="tarjetas-2">
-                <img class="tarjetas-img" src=${element.foto[0]} alt=${element.color}>
-                <h2 class="titulos">${element.producto}</h2>
-                <h3 class="titulos"> $ ${element.precio}</h3>
-                <button class="boton-compra" id="btn-${element.id}">Añadir al carrito</button>
+        <div class="tarjetas" id="tarjeta-${element.id}">
+            <div class="tarjetas-2">
+                <img class="tarjetas-img" src=${element.foto[0]} alt=${element.producto}>
+                <p class="titulos">${element.nombre}</p>
+                <p class="titulos_m"> ${element.marca}</p>
+                <div class="precios">
+                    <p class="titulo"> $ ${element.precio}</p>
+                    <button class="boton-compra" id="btn-${element.id}">Comprar</button>
+                </div>
             </div>
         </div> 
         `
@@ -18,7 +21,7 @@ const ropa = (array) => {
     return arrayNuevo
 }
 
-containerProductos.innerHTML = ropa(productos)
+containerProductos.innerHTML = ropa(productosOferta)
 
 const pushearArray = (array , value) => {
     array.push(value)
@@ -44,9 +47,7 @@ const compras = () => {
     botonCompra.forEach( element => {
         element.onclick = () => {
             const recorteId = element.id.slice(4)
-            // const filtrado = productos.find(producto => {
-            //     return producto.id === Number(recorteId)})
-            pushearArray(carrito ,cargarProductos(recorteId,productos))
+            pushearArray(carrito ,cargarProductos(recorteId , productosOferta))
             localSt( "carrito" , carrito )
         }
     })
@@ -58,3 +59,17 @@ compras()
 const carritoNuevo = datosDelLs ("carrito") || []
 
 carrito = carritoNuevo
+
+// CARRUSEL
+const swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+});

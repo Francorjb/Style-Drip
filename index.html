@@ -3,26 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Tercera PreEnrega</title>
+    <link rel="icon" href="./asset/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Style Drip</title>
 </head>
-<body class="ind_general">
-    <header class="ind_head">
-        <h1 class="head_titulo">Style Drip</h1>
-        <nav class="ind_nav">
-            <input class="search" type="search" placeholder="busqueda">
+<body class="ind__general">
+    <header class="ind__head">
+        <nav class="menu">
+            <section class="menu__container">
+                <h1 class="menu__logo">Style Drip</h1>
+
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">Home</a>
+                    </li>
+
+                    <li class="menu__item menu__item--show">
+                        <p class="menu__link"> Productos <img src="./asset/iconos/flecha-derecha.png" class="menu__arrow"> </p> 
+    
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="./pages/productosmujer.html" class="menu__link menu__link--inside">Mujer</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="./pages/productoshombre.html" class="menu__link menu__link--inside">Hombre</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu__item menu__item--show">
+                        <p class="menu__link"> Redes <img src="./asset/iconos/flecha-derecha.png" class="menu__arrow"></p>
+    
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="https://mail.google.com/mail/u/0/#inbox" class="menu__link menu__link--inside">Email <img class="img" src="./asset/iconos/email.png"></a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="https://wa.me/5492205000377?text=Buenas%20Franco%20Baigorria,%20te%20escribo%20por...%20" class="menu__link menu__link--inside">Whatsapp <img class="img" src="./asset/iconos/whatsapp.png"></a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="https://www.instagram.com/franco_rjb/" class="menu__link menu__link--inside">Instragram <img class="img" src="./asset/iconos/instagram.png"></a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li class="menu__item">
+                        <a href="./pages/registro.html" class="menu__link">Registro</a>
+                    </li>
+                </ul>
+                <div class="menu__movil">
+                    <img src="./asset/iconos/menu-regular-24.png" class="menu__img">
+                </div>
+            </section>
+            <div class="car_contariner">
+                <a id="btn_carrito" href="./pages/carrito.html">
+                    <img src="./asset/iconos/cart-compra.png" alt="carro" class="card-img">    
+                </a>
+            </div>
         </nav>
-        <a id="btn_registro" href="/registro.html"> Registro
-        </a>
-        <a id="btn_carrito" href="/carrito.html"> Carrito
-        </a>
     </header>
-    <main>
+    <main class="grid-main">
+        <!-- CARRUSEL -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./asset/Carrusel/hombrelogo.png"></div>
+                <div class="swiper-slide"><img src="./asset/Carrusel/foto1.png"></div>
+                <div class="swiper-slide"><img src="./asset/Carrusel/foto2.png"></div>
+                <div class="swiper-slide"><img src="./asset/Carrusel/mujerlogo.png"></div>
+                <div class="swiper-slide"><img src="./asset/Carrusel/foto3.png"></div>
+                <div class="swiper-slide"><img src="./asset/Carrusel/foto4.png"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- AVISOS DE COMPRAS -->
+        <div class="container__ayuda">
+            <ul class="container__list">
+                <li class="container__list--or">
+                    <img class="container__img--inside" src="./asset/iconos/paquete.png" alt="paquete compras">
+                    <h3 class="container__title">Consolidate</h3>
+                    <p class="container__paragraph">Ahorrá hasta un 50% en costos de envíos y recibí todos tus pedidos en 1 sólo paquete.</p>
+                </li>
+                <li class="container__list--or">
+                    <img class="container__img--inside" src="./asset/iconos/camion.png" alt="camion">
+                    <h3 class="container__title">Envíos a todo el país</h3>
+                    <p class="container__paragraph">Seleccioná tu método de envío y recibí tu pedido en cualquier punto del país.</p>
+                </li>
+                <li class="container__list--or">
+                    <img class="container__img--inside" src="./asset/iconos/tarjeta.png" alt="paquete compras">
+                    <h3 class="container__title">Pagá como quieras</h3>
+                    <p class="container__paragraph">Elegí el método de pago que prefieras: transferencia bancaria,  depósito bancario o Mercado Pago.</p>
+                </li>
+            </ul>
+        </div>
+        <h3 class="Ofertas">~Super Ofertas~</h3>
         <div class="container-img">
-            
         </div>
     </main>
+    <footer id="ind-footer">
+        <address class="ind-add">
+            <div class="div-redes">
+                <p class="div-nombre-link">Nuestras redes:</p>
+                <a class="div-link" href="https://mail.google.com/mail/u/0/#inbox"><img class="img-icon" src="./asset/iconos/email.png" alt="icon-email"></a>
+                <a class="div-link" href="https://www.instagram.com/franco_rjb/"><img class="img-icon" src="./asset/iconos/instagram.png" alt="instagram"></a>
+                <a class="div-link" href="https://wa.me/5492205000377?text=Buenas%20Franco%20Baigorria,%20te%20escribo%20por...%20"><img class="img-icon" src="./asset/iconos/whatsapp.png" alt="wsp"></a>
+                <a class="div-link" href="https://www.linkedin.com/in/franco-baigorria-90261224a/"><img class="img-icon" src="./asset/iconos/linkedin.png" alt="icon-email"></a>
+            </div>
+            <p class="derechos">Derechos reservados ©StyleDrip - 2023 </p>
+        </address>
+    </footer>
+
+    <!--  SCRIPTS   -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/javascript/menu.js"></script>
     <script src="/javascript/productos.js"></script>
     <script src="/javascript/pagina1.js"></script>
 </body>
