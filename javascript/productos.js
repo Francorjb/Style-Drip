@@ -24,7 +24,7 @@ const productosOferta = [
         "foto" : ["../asset/Productos/Hombres-prod/Remeras/Remera_oso_beige.jpg"],
         "marca": "squadra5",
         "talles" : "L",
-        "precio" : 5600,
+        "precio" : 3000,
     },
     {
         "id" : 4,
@@ -768,6 +768,7 @@ const productoshombre = [
     {
         "id" : 86,
         "producto" : "Buzo H",
+        "categoria": "Buzo",
         "nombre" : "Buzo 2 colores",
         "foto" : ["../asset/Productos/Hombres-prod/Buzos/Buzo_amarillo_negro.jpg"],
         "marca" : "Years",
@@ -777,6 +778,7 @@ const productoshombre = [
     {
         "id" : 87,
         "producto" : "Buzo H",
+        "categoria": "Buzo",
         "nombre" : "Buzo estampado",
         "foto" : ["../asset/Productos/Hombres-prod/Buzos/Buzo_amarillo_negro_con_detalles.jpg"],
         "marca" : "Years",
@@ -786,6 +788,7 @@ const productoshombre = [
     {
         "id" : 88,
         "producto" : "Buzo H",
+        "categoria":"Buzo",
         "nombre" : "Buzo 2 colores",
         "foto" : ["../asset/Productos/Hombres-prod/Buzos/Buzo_beige_claro_negro.jpg"],
         "marca" : "Gap",

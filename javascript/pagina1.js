@@ -23,13 +23,13 @@ const ropa = (array) => {
 
 containerProductos.innerHTML = ropa(productosOferta)
 
-const pushearArray = (array , value) => {
-    array.push(value)
-} 
-
 const localSt = (clave , valor) => {
     return localStorage.setItem(clave, JSON.stringify(valor))
 }
+
+const pushearArray = (array , value) => {
+    array.push(value)
+} 
 
 const cargarProductos = (producto , array) =>{
     return array.find( product =>{
@@ -41,18 +41,16 @@ const datosDelLs = ( clave ) => {
     return JSON.parse(localStorage.getItem(clave))
 }
 
-
 const compras = () => {
     const botonCompra = document.querySelectorAll(".boton-compra")
     botonCompra.forEach( element => {
         element.onclick = () => {
-            const recorteId = element.id.slice(4)
-            pushearArray(carrito ,cargarProductos(recorteId , productosOferta))
+            const recorte = element.id.slice(4)
+            pushearArray(carrito ,cargarProductos(recorte , productosOferta))
             localSt( "carrito" , carrito )
         }
     })
 }
-
 compras()
 
 
