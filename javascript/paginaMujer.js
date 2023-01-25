@@ -59,7 +59,6 @@ botonCategoria.forEach(boton =>{
             const productosBoton = productosMujer.filter(producto => {
                 return producto.producto === e.currentTarget.id
             });
-            console.log(productosBoton)
             cargarProducto(productosBoton)
         }
         else{
@@ -92,9 +91,9 @@ const compras = () => {
         }
     })
 }
-
 compras()
 
 const carritoNuevo = datosDelLs ("carrito") || []
 
 carrito = carritoNuevo
+console.log(carrito)
