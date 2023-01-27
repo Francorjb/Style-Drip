@@ -1,10 +1,12 @@
+const contenedorCarrito = document.querySelector(".elementos-carro")
+const botonFinalizar = document.querySelector(".finalizar_compra")
+const totalCompra = document.querySelector(".total-precio")
+
 const datosDelLs = ( clave ) => {
     return JSON.parse(localStorage.getItem(clave))
 }
 
 let carrito = datosDelLs("carrito")
-
-const contenedorCarrito = document.querySelector(".elementos-carro")
 
 const ropa = (array) => {
     const arrayNuevo = array.reduce((acc , element) =>{
@@ -16,23 +18,15 @@ const ropa = (array) => {
                 <small> ${element.nombre} </small>
                 <p> ${element.producto} </p>
             </div>
-            <div class="carrito__cantidad">
-                <small> Cantidad </small>
-                <p> $${element.cantidad} </p>
-            </div>
             <div class="carrito__precio">
                 <small> Precio </small>
                 <p> $${element.precio} </p>
-            </div>
-            <div class="carrito__total">
-                <small> Subtotal </small>
-                <p> 1000 </p>
             </div>
             <button class="btn__eliminar" id="boton_${element.id}">
                 <img src="../asset/iconos/basura.png">
             </button>
         </div>
-        </div>  
+        </div>
         `
 }, "")
 

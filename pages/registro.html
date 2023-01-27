@@ -63,16 +63,43 @@
             </div>
         </nav>
     </header>
-    <main>
-        <form action="">
-            <div>
-                <p>Registrese</p>
-                <input type="text" name="nombre" id="in-name" placeholder="Nombre">
-                <input type="text" name="apellido" id="in-apellido" placeholder="Apellido">
-                <input type="email" name="email" id="in-email" placeholder="Ingrese un email">
-                <input type="password" name="password" id="in-password" placeholder="ingrese una contraseña">
+    <main class="main__form">
+        <form action="" method="POST" id="form">
+            <div class="formulario">
+                <h1 class="form-titulo">Registro</h1>
+                <div class="form-links">
+                    <label class="form_links--inside" for="nombre"></label>
+                    <input class="form_input" type="text" name="nombre" id="name" required placeholder="Nombre">
+                </div>
+                <div class="form-links">
+                    <label class="form_links--inside" for="email"></label>
+                    <input class="form_input" type="email" name="email" id="email" required placeholder="Ingrese un email">
+                </div>
+                <div class="form-links">
+                    <label class="form_links--inside" for="password"></label>
+                    <input class="form_input" type="password" name="password" id="password" required placeholder="ingrese una contraseña">
+                </div>
+                <div class="botones__rgt">
+                    <button class="btn_form" type="submit">Registrarse</button>
+                    <button class="btn_form"  type="reset">borrar</button>
+                </div>
+                <p class="warnings" id="warnings"></p>
             </div>
         </form>
     </main>
+    <footer id="ind-footer">
+        <address class="ind-add">
+            <div class="div-redes">
+                <p class="div-nombre-link">Nuestras redes:</p>
+                <a class="div-link" href="https://mail.google.com/mail/u/0/#inbox"><img class="img-icon" src="../asset/iconos/email.png" alt="icon-email"></a>
+                <a class="div-link" href="https://www.instagram.com/franco_rjb/"><img class="img-icon" src="../asset/iconos/instagram.png" alt="instagram"></a>
+                <a class="div-link" href="https://wa.me/5492205000377?text=Buenas%20Franco%20Baigorria,%20te%20escribo%20por...%20"><img class="img-icon" src="../asset/iconos/whatsapp.png" alt="wsp"></a>
+                <a class="div-link" href="https://www.linkedin.com/in/franco-baigorria-90261224a/"><img class="img-icon" src="../asset/iconos/linkedin.png" alt="icon-email"></a>
+            </div>
+            <p class="derechos">Derechos reservados ©StyleDrip - 2023 </p>
+        </address>
+    </footer>
+
+    <script src="/javascript/validar.js"></script>
 </body>
 </html>

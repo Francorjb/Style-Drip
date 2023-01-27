@@ -1,4 +1,13 @@
 let carrito = []
+let productosOferta = []
+
+fetch("./javascript/productos.json")
+    .then(response => response.json())
+    .then(data =>{productosOferta = data;
+        containerProductos.innerHTML = ropa(productosOferta)
+        compras()
+    } )
+        
 
 const containerProductos = document.querySelector(".container-img")
 
@@ -21,7 +30,7 @@ const ropa = (array) => {
     return arrayNuevo
 }
 
-containerProductos.innerHTML = ropa(productosOferta)
+
 
 const localSt = (clave , valor) => {
     return localStorage.setItem(clave, JSON.stringify(valor))

@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "producto" : "remera",
+        "nombre" : "Remera azul con manga negra",
+        "foto" : ["../asset/Productos/Hombres-prod/Remeras/Remera_azul_mangas_negras.jpg"],
+        "marca" : "year",
+        "talles" : "M",
+        "precio" : 5000
+    },
+    {
+        "id" : 2,
+        "producto" : "remera",
+        "nombre" : "Remera blanca con detalles",
+        "foto" : ["../asset/Productos/Hombres-prod/Remeras/Remera_blanca_manga_negra.jpg"],
+        "marca": "year",
+        "talles" : "L",
+        "precio" : 5200
+    },
+    {
+        "id" : 3,
+        "producto" : "remera",
+        "nombre" : "Remera beige con dibujo",
+        "foto" : ["../asset/Productos/Hombres-prod/Remeras/Remera_oso_beige.jpg"],
+        "marca": "squadra5",
+        "talles" : "L",
+        "precio" : 3000
+    },
+    {
+        "id" : 4,
+        "producto" : "gorra",
+        "nombre" : "Gorra blanca",
+        "foto" : ["../asset/Productos/Hombres-prod/Gorras/Gorra_blanca.jpg"],
+        "marca" : "wilde",
+        "talles" : "M",
+        "precio" : 4000
+    },
+    {
+        "id" : 5,
+        "producto" : "top",
+        "nombre" : "Top blanco con mangas rayadas",
+        "foto" : ["../asset/Productos/Mujer-prod/Remeras/top_blanco_mangas_rayas.jpg"],
+        "marca" : "fazurri",
+        "talles" : "S",
+        "precio" : 6500
+    },
+    {
+        "id" : 6,
+        "producto" : "calza",
+        "nombre" : "calza blanca lisa",
+        "foto" : ["../asset/Productos/Mujer-prod/Calzas/Calza_con_pollera_blanca.jpg"],
+        "marca" : "squadra5",
+        "talles" : "L",
+        "precio" : 7500
+    },
+    {
+        "id" : 7,
+        "producto" : "calza",
+        "nombre" : "calza negra con detalles",
+        "foto" : ["../asset/Productos/Mujer-prod/Calzas/calza_negra_detalles.jpg"],
+        "marca" : "squadra5",
+        "talles" : "L",
+        "precio" : 7600
+    },
+    {
+        "id" : 8,
+        "producto" : "Remera con estampa",
+        "nombre" : "Remera dos colores",
+        "foto" : ["../asset/Productos/Mujer-prod/Remeras/remera_blanca_con_azul.jpg"],
+        "marca" : "squadra5",
+        "talles" : "L",
+        "precio" : 4000
+    }
+]
