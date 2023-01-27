@@ -1,6 +1,5 @@
 const contenedorCarrito = document.querySelector(".elementos-carro")
 const botonFinalizar = document.querySelector(".finalizar_compra")
-const totalCompra = document.querySelector(".total-precio")
 
 const datosDelLs = ( clave ) => {
     return JSON.parse(localStorage.getItem(clave))

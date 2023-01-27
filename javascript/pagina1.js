@@ -7,7 +7,6 @@ fetch("./javascript/productos.json")
         containerProductos.innerHTML = ropa(productosOferta)
         compras()
     } )
-        
 
 const containerProductos = document.querySelector(".container-img")
 
@@ -29,8 +28,6 @@ const ropa = (array) => {
     }, "")
     return arrayNuevo
 }
-
-
 
 const localSt = (clave , valor) => {
     return localStorage.setItem(clave, JSON.stringify(valor))
